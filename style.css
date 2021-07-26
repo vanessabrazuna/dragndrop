@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c0392b;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.neutralArea {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #FFF;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #313030;
+    color: #FFF;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+.item.dragging {
+    opacity: 0.5;
+}
+.areas {
+    width: 450px;
+    display: flex;
+    margin-top: 20px;
+}
+.areas.correct .area {
+    border: 2px solid #fff200;
+}
+.area {
+    width: 150px;
+    height: 150px;
+    border: 2px dotted #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 3em;
+    }
+
+    .neutralArea {
+        width: 300px;
+        padding: 10px;
+        gap: 1em;
+    }
+
+    .areas {
+        width: 300px;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 10px;
+    }
+}
