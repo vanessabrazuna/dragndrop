@@ -1,2 +1,2 @@
 # dragndrop
-Desafio prático de Javascript referente ao curso B7Web. 
+Practical Javascript challenge for the B7Web course.
